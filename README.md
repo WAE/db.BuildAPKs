@@ -55,7 +55,7 @@ These files are located in ~/buildAPKs/var/db and their purpose is outlined in t
 
 Change requests to the database located at [db.BuildAPKs](https://github.com/BuildAPKs/db.BuildAPKs/) may be proposed [here](https://github.com/BuildAPKs/db.BuildAPKs/pulls).
 
-This command: ` grep NAMES ~/buildAPKs/var/db/README.md | grep \| | awk '{print $2}' | cut -c 1 | sort | uniq | cat ` assists in maintaining the file name structure.  These files contain data pair types:
+This command: ` grep NAMES ~/buildAPKs/var/db/README.md | grep \| | awk '{print $2}' | cut -c 1 | sort | uniq ` assists in maintaining the file name structure.  These files contain data pair types:
 
 | DNAMES ∆     | login names and built date pairs |
 | FNAMES ∆     | login names and build time pairs |
