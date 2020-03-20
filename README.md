@@ -44,8 +44,6 @@ These files are located in ~/buildAPKs/var/db and their purpose is outlined in t
 | XNAMES †     | user created listing for accounts that will NOT be downloaded and built |
 | YNAMES †∆    | accounts that have AndroidManifest.xml file(s), but did not build any APKs with buildAPKs |
 | ZNAMES †∆    | account names that have zero APK projects |
-| mn.bash      | merge NAMES files from RDR/var/db into db.BuildAPKs |
-| rm.dups.bash | Depreciated: parses files for duplicate names |
 
 † names and projects that are NOT built
 
@@ -57,6 +55,10 @@ Change requests to the database located at [db.BuildAPKs](https://github.com/Bui
 
 This command: ` grep NAMES ~/buildAPKs/var/db/README.md | grep \| | awk '{print $2}' | cut -c 1 | sort | uniq ` assists in maintaining the file name structure.  These files contain data pair types:
 
+| File Name    | Purpose    |
+| ------------ | ---------  |
+| mn.bash      | merge NAMES files from RDR/var/db into db.BuildAPKs |
+| rm.dups.bash | Depreciated: parses files for duplicate names |
 | DNAMES ∆     | login names and built date pairs |
 | FNAMES ∆     | login names and build time pairs |
 | GNAMES ∆     | login names and login type pairs |
