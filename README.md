@@ -34,7 +34,7 @@ These files are located in ~/buildAPKs/var/db and their purpose is outlined in t
 | NUNAMES      | login names with possible new APKs that might migrate to ma.bash |
 | GNAMES ∆     | login names and login type pairs |
 | ONAMES       | organization names whose APKs build in buildAPKs on device |
-| PNAMES †∆     | pending names that are NOT downloaded and built, but might transition to ONAMES, UNAMES and ma.bash |
+| PNAMES †∆    | pending names that are NOT downloaded and built, but might transition to ONAMES, UNAMES and ma.bash |
 | QNAMES ∆     | accounts that have at least one AndroidManifest.xml file |
 | README.md    | this file |
 | SNAMES ∆     | login names and download size pairs |
@@ -49,7 +49,7 @@ These files are located in ~/buildAPKs/var/db and their purpose is outlined in t
 
 ∆ system files
 
-[Awk](https://www.gnu.org/software/gawk/manual/) can be used ` awk 'NR>=20 && NR<=52' ~/buildAPKs/var/db/README.md ` to view the \*NAMES files table in this file.  Use ` grep ∆ ~/buildAPKs/var/db/README.md ` to view only the \*NAMES system files and their definition.
+[Awk](https://www.gnu.org/software/gawk/manual/) can be used ` awk 'NR>=20 && NR<=51' ~/buildAPKs/var/db/README.md ` to view the \*NAMES files table in this file.  Use ` grep ∆ ~/buildAPKs/var/db/README.md ` to view only the \*NAMES system files and their definition.
 
 Change requests to the database located at [db.BuildAPKs](https://github.com/BuildAPKs/db.BuildAPKs/) may be proposed [here](https://github.com/BuildAPKs/db.BuildAPKs/pulls).
 
